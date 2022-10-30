@@ -19324,8 +19324,8 @@ h3.title-style {
 
 /* banner section */
 .w3l-banner {
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  background-size: 500% 500%;
+  /* animation: gradient 15s ease infinite; */
   min-height: 100vh;
   position: relative;
   z-index: 1;
@@ -21077,10 +21077,22 @@ h4.inner-text-title {
 
 .logo1 {
   margin: 1px;
-  height: 100px;
-  width: 100px;
+  height: 60px;
+  width: 40px;
 }
 
-.fa-brands-fa-instagram:hover {
-  color: pink;
+.fa-instagram:hover {
+  color: #e1306c;
+}
+
+.fa-facebook:hover {
+  color: #3b5998;
+}
+
+.fa-linkedin:hover {
+  color: #04669a;
+}
+
+.fa-youtube:hover {
+  color: #c31a1e;
 }
