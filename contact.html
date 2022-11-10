@@ -4,6 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="assets/images/favicon.ico" type="image"/>
     <title>Contact Us | IEDC SNGCE</title>
     <!-- Google fonts -->
     <link
@@ -16,6 +17,8 @@
       src="https://kit.fontawesome.com/d3ee275e48.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   </head>
 
   <body>
@@ -23,8 +26,8 @@
     <header id="site-header" class="fixed-top">
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
-          <a class="navbar-brand" href="index.html"
-            ><i class="fas fa-graduation-cap"></i>IEDC SNGCE
+          <a href="index.html">
+            <img src="assets/images/logo1.jpg" class="logo1"alt="logo1 " width="90" height="90"/>
           </a>
           <button
             class="navbar-toggler collapsed"
@@ -55,6 +58,14 @@
                   >Gallery</a
                 >
               </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="execom3.html"
+                  >Exe Com</a
+                >
+          </li>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="events.html"
                   >Events</a
@@ -142,9 +153,9 @@
         <div class="row contact-block">
           <div class="col-md-7 contact-right">
             <form
-              action="https://sendmail.w3layouts.com/submitForm"
-              method="post"
-              class="signin-form"
+              action=""              
+              class="submit-form"
+              id="submit-form"
             >
               <div class="input-grids">
                 <div class="row">
@@ -155,7 +166,7 @@
                       id="w3lName"
                       placeholder="Your Name"
                       class="contact-input"
-                      required=""
+                      
                     />
                   </div>
                   <div class="col-sm-6">
@@ -165,7 +176,7 @@
                       id="w3lSender"
                       placeholder="Your Email"
                       class="contact-input"
-                      required=""
+                      
                     />
                   </div>
                 </div>
@@ -175,7 +186,7 @@
                   id="w3lSubect"
                   placeholder="Subject"
                   class="contact-input"
-                  required=""
+                  
                 />
                 <!-- <input
                   type="text"
@@ -192,11 +203,11 @@
                   id="w3lMessage"
                   placeholder="Type your message here"
                   required=""
-                ></textarea>
-              </div>
-              <div class="text-start">
-                <button class="btn btn-style btn-style-3">Send Message</button>
-              </div>
+                  ></textarea>
+              </div>            
+                <div class="text-start">
+                 <Button type="submit" value="submit"  class="btn btn-style btn-style-3" >Send Message</Button>
+               </div>  
             </form>
           </div>
           <div class="col-md-5 ps-lg-5 mt-md-0 mt-5">
@@ -230,7 +241,7 @@
                   <div class="cont-right">
                     <h6>Email Us</h6>
                     <p>
-                      <a href="mailto:iedc@sngce.ac.in" class="mail"
+                      <a href="https://mailto:iedc@sngce.ac.in" class="mail" target="_blank"
                         >iedc@sngce.ac.in</a
                       >
                     </p>
@@ -277,7 +288,7 @@
               <ul>
                 <h6 class="footer-title-29">IEDC SNGCE</h6>
                 <p class="mb-lg-4 pe-xl-5 ">
-                  The Innovation and Entrepreneurship Development Cell [IEDC] is an active student run cell that works closely with kerala start up mission and other student clubs.
+                  The Innovation and Entrepreneurship Development Center [IEDC] is an active student run cell that works closely with kerala start up mission and other student clubs.
 
 
                 </p>
@@ -302,6 +313,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="execom3.html">Exe Com</a></li>
                 <li><a href="events.html">Events</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
               </ul>
@@ -355,9 +367,9 @@
     </footer>
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: gray">
-      2022 ©
+      
       <a class="text-dark" href="index.html">
-        IEDC SNGCE |Justin & Adhithya| All Rights Reserved.
+        2022 © IEDC SNGCE |Justin & Adhithya| All Rights Reserved.
       </a>
     </div>
     <!-- Copyright -->
@@ -444,5 +456,24 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <!-- //bootstrap -->
     <!-- //Js scripts -->
+    <script>
+      $("#submit-form").submit((e)=>{
+          e.preventDefault()
+          $.ajax({
+              url:"https://script.google.com/macros/s/AKfycbx5VlOKLyuyBofRMjx7g85mTqL-HCCkTnf706bovaTAyRwxkMGQV5-3CHIrQ5DirfMWWQ/exec",
+              data:$("#submit-form").serialize(),
+              method:"post",
+              success:function (response){
+                  alert("Form submitted successfully")
+                  window.location.reload()
+                  //window.location.href="https://google.com"
+              },
+              error:function (err){
+                  alert("Something Error")
+  
+              }
+          })
+      })
+  </script>
   </body>
 </html>
