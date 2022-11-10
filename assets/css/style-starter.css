@@ -21075,10 +21075,23 @@ h4.inner-text-title {
 
 /* //team block */
 
+<<<<<<< HEAD
 .fa-instagram:hover {
   color: #e1306c;
 }
 
+=======
+.logo1 {
+  margin: 1px;
+  height: 60px;
+  width: 40px;
+}
+
+.fa-instagram:hover {
+  color: #e1306c;
+}
+
+>>>>>>> second
 .fa-facebook:hover {
   color: #3b5998;
 }
