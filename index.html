@@ -4,11 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-<<<<<<< HEAD
     <link rel="icon" href="assets/images/favicon.ico" type="image"/>
-=======
-    <link rel="icon" href="images/favicon.ico" type="image"/>
->>>>>>> second
     <title>Home | IEDC SNGCE</title>
     <!-- Google fonts -->
     <link
@@ -16,8 +12,16 @@
       rel="stylesheet"
     />
     <!-- Template CSS Style link -->
-    <link rel="stylesheet" href="assets/css/style-starter.css" />
+    <link rel="stylesheet" href="assets/css/style-starter.css"/>
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="assets/css/owl-carousel.css"/>
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="assets/css/"/>
+
+
+
     <script src="https://kit.fontawesome.com/d3ee275e48.js" crossorigin="anonymous"></script>
+    
   </head>
 
   <body>
@@ -25,15 +29,10 @@
     <header id="site-header" class="fixed-top">
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
-<<<<<<< HEAD
           <a href="index.html">
             <img src="assets/images/logo1.jpg" class="logo1"alt="logo1 " width="90" height="90"/>
           </a>
           <button
-=======
-          <a href="index.html"><img src="../iedcsngce/assets/images/logo1.jpg" height="400" width="400" alt="logo"></a>
-            <button
->>>>>>> second
             class="navbar-toggler collapsed"
             type="button"
             data-bs-toggle="collapse"
@@ -66,12 +65,26 @@
                   >Exe Com</a
                 >
           </li>
-              <li class="nav-item">
-                <a class="nav-link"aria-current="page" href="events.html">Events</a>
-              </li>
+
+                      
+          <li class="">          
+            <a href="#">Events<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+            <input type="checkbox" id="drop-2" />
+            <ul class="inner-dropdown ">
+              <li><a href="events.html">Completed Events</a></li>
+              <li><a href="newevents.html">Upcoming Events</a></li>
+            </ul>
+          </li> 
+
+            <!-- <li class="nav-item">
+                <a class="nav-link"aria-current="page" href="#" data-toggle="dropdown">Events </a> 
+               
+              </li> -->
+
               <li class="nav-item">
                 <a class="nav-link"aria-current="page" href="contact.html">Contact Us</a>
-              </li>
+              </li> 
+              
             </ul>
             <!-- search-right -->
             <div class="header-search position-relative">
@@ -653,11 +666,7 @@
               <ul>
                 <h6 class="footer-title-29">IEDC SNGCE</h6>
                 <p class="mb-lg-4 pe-xl-5 ">
-<<<<<<< HEAD
                   The Innovation and Entrepreneurship Development Center [IEDC] is an active student run cell that works closely with kerala start up mission and other student clubs.
-=======
-                  The Innovation and Entrepreneurship Development Cell [IEDC] is an active student run cell that works closely with kerala start up mission and other student clubs.
->>>>>>> second
 
 
                 </p>
@@ -692,8 +701,8 @@
               <ul>
                 <h6 class="footer-title-29">Follow Us</h6>
               </ul>
-                 <a href="https://instagram.com/iedc_sngce?utm_medium=copy_link" target="blank"><i class="fa-brands fa-instagram fa-2xl" style="padding-left:0em"></i></a>  
-                 <a href="https://www.facebook.com/iedc.sngce/" target="blank"><i class="fa-brands fa-facebook fa-2xl" style="padding-left:1em"></i></a>
+                 <a href="https://instagram.com/iedc_sngce?utm_medium=copy_link" target="_blank"><i class="fa-brands fa-instagram fa-2xl" style="padding-left:0em"></i></a>  
+                 <a href="https://www.facebook.com/iedc.sngce/" target="_blank"><i class="fa-brands fa-facebook fa-2xl" style="padding-left:1em"></i></a>
                  <div><br><br></div>
                  <a href="https://youtube.com/channel/UCDizRVRxQ5o14BFZInimp6A" target="_blank"><i class="fa-brands fa-youtube fa-2xl" ></i></a>
                  <a href="https://www.linkedin.com/company/iedc-bootcamp-sngce/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"style="padding-left:1em"></i></a>              
@@ -735,9 +744,9 @@
       </div>   
     </footer>
     <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: gray">
-      <a class="text-dark" href="index.html">
-        2022 © IEDC SNGCE |Justin & Adhithya| All Rights Reserved.
+    <div class="text-center p-3" style="background-color:black">
+      <a class="text-light" href="index.html">
+        2022 © IEDC SNGCE | All Rights Reserved.
       </a>
     </div>
     <!-- Copyright -->
@@ -853,7 +862,44 @@
           }
       }
       </script>
-  <!-- searchbutton -->
+
+      <!-- main slider -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/owl.carousel.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('.owl-one').owlCarousel({
+				loop: true,
+				margin: 0,
+				nav: false,
+				dots: true,
+				responsiveClass: true,
+				autoplay: true,
+				autoplayTimeout: 5000,
+				autoplaySpeed: 1000,
+				autoplayHoverPause: false,
+				responsive: {
+					0: {
+						items: 1,
+						nav: false
+					},
+					480: {
+						items: 1,
+						nav: false
+					},
+					667: {
+						items: 1,
+						nav: false
+					},
+					1000: {
+						items: 1,
+						nav: false
+					}
+				}
+			})
+		})
+	</script>
+	<!-- /main slider -->
 
       
   </body>
