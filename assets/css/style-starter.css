@@ -2882,7 +2882,9 @@ textarea.form-control-lg {
 }
 
 .input-group
-  > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(
+    .valid-feedback
+  ):not(.invalid-tooltip):not(.invalid-feedback) {
   margin-left: -1px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
@@ -20786,7 +20788,7 @@ h3.title-big {
 .w3l-footer-29-main .footer-list-29 p a,
 .w3l-footer-29-main .footer-list-29 p {
   font-size: 15px;
-  color: #ababab;
+  color: #fff;
   padding-bottom: 4px;
 }
 
@@ -20796,7 +20798,7 @@ h3.title-big {
 
 .w3l-footer-29-main .footer-list-29 ul li a:hover,
 .w3l-footer-29-main .footer-list-29 p a:hover {
-  color: #fff;
+  color: #f7ce68;
 }
 
 .w3l-footer-29-main .footer-list-29 ul li:last-child a,
@@ -21104,3 +21106,76 @@ h4.inner-text-title {
 .fa-youtube:hover {
   color: #c31a1e;
 }
+/* 
+nav .logo {
+  color: white;
+  font-size: 33px;
+  font-weight: bold;
+  line-height: 70px;
+  padding-left: 110px;
+} */
+/* nav {
+  height: 70px;
+  /* background: #063247; */
+/* box-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
+} */
+nav ul {
+  float: right;
+  margin-right: 30px;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  color: black;
+  display: block;
+  padding: 0 15px;
+  line-height: 10px;
+  font-size: 14px;
+  /* background: #063247; */
+  transition: 0.5s;
+}
+nav ul li a:hover,
+nav ul li a.active {
+  color: #fbb034;
+}
+nav ul ul {
+  position: absolute;
+  top: 85px;
+  border-top: 3px solid #fbb034;
+  opacity: 0;
+  visibility: hidden;
+}
+nav ul li:hover > ul {
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+  transition: 0.3s linear;
+}
+nav ul ul li {
+  width: 150px;
+  display: list-item;
+  position: relative;
+  border: 1px solid #042331;
+  border-top: none;
+}
+nav ul ul li a {
+  line-height: 50px;
+}
+nav ul ul ul {
+  border-top: none;
+}
+nav ul ul ul li {
+  position: relative;
+  top: -70px;
+  left: 150px;
+}
+nav ul ul li a i {
+  margin-left: 45px;
+}
+/* section {
+  background: url(bg.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+} */
